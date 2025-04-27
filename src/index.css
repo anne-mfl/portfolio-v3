@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brown: #491603;
+  --color-scarlet: #ae360d;
+  --color-gray_yellow: #c0baa7;
+  --color-ivory: #eceadc;
+  --color-white: #f7f7e9;
+
+  --font-gilroy: 'Gilroy', sans-serif;
+  
+  /* --font-jost: 'Jost', sans-serif; */
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-UltraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-ExtraLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* @layer components {
+  .text_h1 {
+    font-size: 3rem; 
+    font-weight: 500;
+    line-height: 1;  
+    @media (max-width: 640px) {
+      font-size: 2rem; 
+      line-height: 1.125; 
+    }
+  }
+  .btn_white {
+    @apply bg-white text-[0.938rem] font-medium text-black rounded-lg tracking-[1px] py-4 px-6 hover:bg-light_peach hover:text-white hover:cursor-pointer
+  }
+} */
+
+
+
+
+
+
+
