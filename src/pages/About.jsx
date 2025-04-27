@@ -1,8 +1,13 @@
 import React from 'react'
 
-const About = () => {
+const About = ({activePage, setActivePage}) => {
   return (
-    <div>About</div>
+    <div 
+    className={`bg-teal-100 h-screen ${activePage === 'About' ? 'flex-1' : ''}`}
+    onClick={() => setActivePage('About')}
+    >
+      About
+      </div>
   )
 }
 
