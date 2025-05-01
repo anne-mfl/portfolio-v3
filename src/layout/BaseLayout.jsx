@@ -5,7 +5,7 @@ import Experience from 'pages/Experience'
 import Projects from 'pages/Projects'
 import Contact from 'pages/Contact'
 
-const Layout = () => {
+const BaseLayout = () => {
 
   const [activePage, setActivePage] = useState('Home')
 
@@ -20,4 +20,4 @@ const Layout = () => {
   )
 }
 
-export default Layout
+export default BaseLayout

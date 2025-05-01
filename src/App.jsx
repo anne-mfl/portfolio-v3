@@ -3,18 +3,20 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css'
 import Home from 'pages/Home'
 import About from 'pages/About'
-import Layout from 'src/layout/Layout';
+import BaseLayout from 'src/layout/BaseLayout';
 import Projects from 'pages/Projects'
 
 function App() {
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+      <div className='font-gilroy'>
+        <Routes>
+          <Route path="/" element={<BaseLayout />} />
+          {/* <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} /> */}
+        </Routes>
+      </div>
     </BrowserRouter>
   )
 }

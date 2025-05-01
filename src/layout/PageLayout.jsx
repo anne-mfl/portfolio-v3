@@ -1,0 +1,46 @@
+import React from 'react'
+
+const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
+  return (
+    <div
+      className={`min-h-screen duration-500 ease-out
+        ${activePage === thisPage ? 'flex-1' : 'w-20 h-screen'}
+
+         ${thisPage === 'Home' && 'bg-[#F6EEE9] text-[#2e2e2e]'}
+         ${thisPage === 'About' && 'bg-[#F3D8C7] text-[#2e2e2e]'}
+         ${thisPage === 'Experience' && 'bg-[#E8B9A6] text-[#2e2e2e]'}
+         ${thisPage === 'Projects' && 'bg-[#D99873] text-[#2e2e2e]'}
+         ${thisPage === 'Contact' && 'bg-[#514244] text-[#fdfcfb]'}
+        `}
+
+      // ${thisPage === 'Home' && 'bg-[#F6EEE9] text-[#2E4638]'}
+      // ${thisPage === 'About' && 'bg-[#F3D8C7] text-[#2e2e2e]'}
+      // ${thisPage === 'Experience' && 'bg-[#E8B9A6] text-[#2e2e2e]'}
+      // ${thisPage === 'Projects' && 'bg-[#D99873] text-[#2e2e2e]'}
+      // ${thisPage === 'Contact' && 'bg-[#514244] text-[#fdfcfb]'}
+
+      // ${thisPage === 'Home' && 'bg-[#F4EDE4] text-[#2E4638]'}
+      // ${thisPage === 'About' && 'bg-[#E7D8C9] text-[#2e2e2e]'}
+      // ${thisPage === 'Experience' && 'bg-[#D3C6B3] text-[#2e2e2e]'}
+      // ${thisPage === 'Projects' && 'bg-[#C1A78C] text-[#2e2e2e]'}
+      // ${thisPage === 'Contact' && 'bg-[#4A4E46] text-[#fdfcfb]'}
+
+      // ${thisPage === 'Home' && 'bg-[#E6E4F6] text-[#2e2e2e]'}
+      // ${thisPage === 'About' && 'bg-[#D2E9E1] text-[#2e2e2e]'}
+      // ${thisPage === 'Experience' && 'bg-[#EAD7C2] text-[#2e2e2e]'}
+      // ${thisPage === 'Projects' && 'bg-[#E9C4C2] text-[#2e2e2e]'}
+      // ${thisPage === 'Contact' && 'bg-[#332940] text-[#fdfcfb]'}
+      onClick={() => setActivePage(thisPage)}
+    >
+      {
+        thisPage === activePage
+          ? <div className='w-full'>{children}</div>
+          : <div className='h-full flex justify-center items-end'>
+            <h1 className='text-[#D4A11F] -rotate-90 my-12'>{thisPage}</h1>
+          </div>
+      }
+    </div>
+  )
+}
+
+export default PageLayout
