@@ -7,10 +7,40 @@
   --color-ivory: #eceadc;
   --color-white: #f7f7e9;
 
+  --color-custom_white: #F6EEE9;
+  --color-custom_pale: #F3D8C7;
+  --color-custom_peach: #E8B9A6;
+  --color-custom_orange: #D99873;
+  --color-custom_brown: #514244;
+
   --font-gilroy: 'Gilroy', sans-serif;
   
   /* --font-jost: 'Jost', sans-serif; */
 }
+
+
+@layer components {
+  .tech_stack {
+    @apply bg-custom_orange
+  }
+}
+
+
+
+
+/* @layer components {
+  .text_h1 {
+    font-size: 3rem; 
+    font-weight: 500;
+    line-height: 1;  
+    @media (max-width: 640px) {
+      font-size: 2rem; 
+      line-height: 1.125; 
+    }
+  }
+} */
+
+
 
 @font-face {
   font-family: 'Gilroy';
@@ -77,20 +107,7 @@
 }
 
 
-/* @layer components {
-  .text_h1 {
-    font-size: 3rem; 
-    font-weight: 500;
-    line-height: 1;  
-    @media (max-width: 640px) {
-      font-size: 2rem; 
-      line-height: 1.125; 
-    }
-  }
-  .btn_white {
-    @apply bg-white text-[0.938rem] font-medium text-black rounded-lg tracking-[1px] py-4 px-6 hover:bg-light_peach hover:text-white hover:cursor-pointer
-  }
-} */
+
 
 
 

@@ -7,7 +7,7 @@ import Contact from 'pages/Contact'
 
 const BaseLayout = () => {
 
-  const [activePage, setActivePage] = useState('Home')
+  const [activePage, setActivePage] = useState('About')
 
   return (
     <div className='flex'>
