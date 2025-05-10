@@ -4,7 +4,8 @@ import PageLayout from 'layout/PageLayout'
 const About = ({ activePage, setActivePage }) => {
   return (
     <PageLayout activePage={activePage} setActivePage={setActivePage} thisPage={'About'}>
-      <div className="py-24 px-16 w-[1120px] overflow-auto">
+      <div className="py-12 px-16 w-[1120px] overflow-auto">
+        <h1 className='page_title mb-8'>About me</h1>
         <section className='bg-custom_white py-8 px-12 text-lg '>
           <p>
             Hi, Hola and こんにちは👋 I'm Anne.

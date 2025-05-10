@@ -20,8 +20,8 @@
 
 
 @layer components {
-  .tech_stack {
-    @apply bg-custom_orange
+  .page_title {
+    @apply text-4xl font-medium
   }
 }
 
