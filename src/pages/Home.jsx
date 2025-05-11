@@ -8,7 +8,7 @@ const Home = ({ activePage, setActivePage }) => {
       <div className='h-screen flex justify-center items-center w-[1120px]'>
         <main className='w-fit'>
           <div className='w-fit mb-12'>
-            <h1 className='text-8xl font-bold'>Anne Lee</h1>
+            <h1 className='page_title text-8xl font-bold mb-2'>Anne Lee</h1>
             <h2 className='text-2xl text-right'>Frontend Developer</h2>
           </div>
           {/* <img src={logo} alt="Anne Lee logo" className='w-130 mb-12'/> */}

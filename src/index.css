@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -12,16 +13,22 @@
   --color-custom_peach: #E8B9A6;
   --color-custom_orange: #D99873;
   --color-custom_brown: #514244;
+  --color-custom_yellow: #D4A11F;
+  --color-custom_dark_yellow: #775c18;
 
   --font-gilroy: 'Gilroy', sans-serif;
-  
-  /* --font-jost: 'Jost', sans-serif; */
+  --font-playfair: 'Playfair Display', serif;
 }
 
 
 @layer components {
   .page_title {
-    @apply text-4xl font-medium
+    @apply text-4xl font-bold font-playfair
+  }
+  .tech_stack {
+    @apply [&>ul]:flex [&>ul]:flex-wrap [&>ul]:gap-1
+    [&_li]:bg-custom_orange [&_li]:w-fit [&_li]:py-1 [&_li]:px-3 [&_li]:rounded-full
+    [&_li]:text-sm [&_li]:whitespace-nowrap [&_li]:text-custom_brown
   }
 }
 
@@ -49,6 +56,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Gilroy';
   src: url('./fonts/Gilroy-UltraLight.ttf') format('truetype');
@@ -56,6 +64,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Gilroy';
   src: url('./fonts/Gilroy-ExtraLight.ttf') format('truetype');
@@ -63,6 +72,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Gilroy';
   src: url('./fonts/Gilroy-Regular.ttf') format('truetype');
@@ -70,6 +80,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Gilroy';
   src: url('./fonts/Gilroy-Medium.ttf') format('truetype');
@@ -77,6 +88,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Gilroy';
   src: url('./fonts/Gilroy-SemiBold.ttf') format('truetype');
@@ -84,6 +96,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Gilroy';
   src: url('./fonts/Gilroy-Bold.ttf') format('truetype');
@@ -91,6 +104,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Gilroy';
   src: url('./fonts/Gilroy-ExtraBold.ttf') format('truetype');
@@ -98,6 +112,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Gilroy';
   src: url('./fonts/Gilroy-Black.ttf') format('truetype');
@@ -105,13 +120,3 @@
   font-style: normal;
   font-display: swap;
 }
-
-
-
-
-
-
-
-
-
-

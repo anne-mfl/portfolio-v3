@@ -5,6 +5,7 @@ import Home from 'pages/Home'
 import About from 'pages/About'
 import BaseLayout from 'src/layout/BaseLayout';
 import Projects from 'pages/Projects'
+import Logo from 'pages/Logo';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <div className='font-gilroy'>
         <Routes>
           <Route path="/" element={<BaseLayout />} />
+          <Route path="/logo" element={<Logo />} />
           {/* <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} /> */}
         </Routes>

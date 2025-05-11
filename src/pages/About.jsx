@@ -4,7 +4,7 @@ import PageLayout from 'layout/PageLayout'
 const About = ({ activePage, setActivePage }) => {
   return (
     <PageLayout activePage={activePage} setActivePage={setActivePage} thisPage={'About'}>
-      <div className="py-12 px-16 w-[1120px] overflow-auto">
+      <div className="py-12 px-16 w-[1120px] overflow-auto ">
         <h1 className='page_title mb-8'>About me</h1>
         <section className='bg-custom_white py-8 px-12 text-lg '>
           <p>
@@ -28,11 +28,7 @@ const About = ({ activePage, setActivePage }) => {
 
         <div className='h-12'></div>
 
-        <section className='bg-custom_white py-8 px-12 text-lg
-          [&>ul]:flex [&>ul]:flex-wrap [&>ul]:gap-1
-          [&_li]:bg-custom_orange [&_li]:w-fit [&_li]:py-1 [&_li]:px-3 [&_li]:rounded-full
-          [&_li]:text-sm [&_li]:whitespace-nowrap [&_li]:text-custom_brown
-        '>
+        <section className='bg-custom_white py-8 px-12 text-lg tech_stack'>
           Tech stack:
           <ul className='mb-4'>
             <li>React</li>
