@@ -4,15 +4,9 @@ import PageLayout from 'layout/PageLayout'
 
 const Projects = ({ activePage, setActivePage }) => {
   return (
-    // <div
-    //   className={`bg-teal-300 h-screen duration-300 ${activePage === 'Projects' ? 'flex-1' : 'w-20'}`}
-    //   onClick={() => setActivePage('Projects')}
-    // >
-    //   Projects
-    // </div>
     <PageLayout activePage={activePage} setActivePage={setActivePage} thisPage={'Projects'}>
-      <div>
-        Projects
+      <div className="py-12 px-16 overflow-auto">
+        <h1 className='page_title mb-8'>Projects</h1>
       </div>
     </PageLayout>
   )
