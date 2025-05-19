@@ -17,13 +17,13 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
       {
         thisPage === activePage
           ? <div className='overflow-auto h-full'>{children}</div>
-          : thisPage !== activePage && thisPage === 'Home'
-            ? <div className='h-screen flex flex-col justify-between items-center'>
-              <img src='src/assets/logo_yellow_sq.png' alt="Anne Lee logo" className='w-16 px-2 pt-3 cursor-pointer' />
-              <h1 className={`${thisPage === 'Projects' || thisPage === 'Experience' ? 'text-custom_dark_yellow' : 'text-custom_yellow'} -rotate-90 my-12`}>
-                {thisPage}
-              </h1>
-            </div>
+          // : thisPage !== activePage && thisPage === 'Home'
+          //   ? <div className='h-screen flex flex-col justify-between items-center'>
+          //     <img src='src/assets/logo_yellow_sq.png' alt="Anne Lee logo" className='w-16 px-2 pt-3 cursor-pointer' />
+          //     <h1 className={`${thisPage === 'Projects' || thisPage === 'Experience' ? 'text-custom_dark_yellow' : 'text-custom_yellow'} -rotate-90 my-12`}>
+          //       {thisPage}
+          //     </h1>
+          //   </div>
             : <div className='h-screen flex justify-center items-end'>
               <h1 className={`${thisPage === 'Projects' || thisPage === 'Experience' ? 'text-custom_dark_yellow' : 'text-custom_yellow'} -rotate-90 my-12`}>
                 {thisPage}

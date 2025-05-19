@@ -96,7 +96,9 @@ const Experience = ({ activePage, setActivePage }) => {
         <div className='h-12'></div>
 
         <div>
-          <button className='rounded-full border py-3 px-6'>View CV</button>
+          <a href="">
+            <button className='rounded-full border border-[#2E2E2E] py-3 px-6 cursor-pointer hover:bg-[#2E2E2E] hover:text-custom_orange'>View CV</button>
+          </a>
         </div>
       </div>
     </PageLayout>
