@@ -52,7 +52,7 @@ const Experience = ({ activePage, setActivePage }) => {
 
   return (
     <PageLayout activePage={activePage} setActivePage={setActivePage} thisPage={'Experience'}>
-      <div className="py-12 px-16 overflow-auto">
+      <div className="py-12 px-16  w-[1120px] overflow-auto">
         <h1 className='page_title mb-8'>Experience</h1>
 
         <section className=''>
@@ -97,7 +97,7 @@ const Experience = ({ activePage, setActivePage }) => {
 
         <div>
           <a href="">
-            <button className='rounded-full border border-[#2E2E2E] py-3 px-6 cursor-pointer hover:bg-[#2E2E2E] hover:text-custom_orange'>View CV</button>
+            <button className='rounded-full border border-[#2E2E2E] py-3 px-8 cursor-pointer hover:bg-[#2E2E2E] hover:text-custom_orange'>View CV</button>
           </a>
         </div>
       </div>

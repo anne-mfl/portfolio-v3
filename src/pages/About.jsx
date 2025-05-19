@@ -9,7 +9,7 @@ const About = ({ activePage, setActivePage }) => {
         <section className='bg-custom_white py-8 px-12 text-lg '>
           <p>
             Hi, Hola and こんにちは👋 I'm Anne.
-            <br /><br />
+            <br/>
             I am a detail-oriented Frontend Developer
             based in Barcelona, Spain. I am passionate about crafting user-centric
             web experiences and transforming designs into responsive, pixel-perfect interfaces.
@@ -29,7 +29,7 @@ const About = ({ activePage, setActivePage }) => {
         <div className='h-12'></div>
 
         <section className='bg-custom_white py-8 px-12 text-lg tech_stack'>
-          Tech stack:
+          Proficient in:
           <ul className='mb-4'>
             <li>React</li>
             <li>Next.js</li>
