@@ -52,7 +52,7 @@ const Experience = ({ activePage, setActivePage }) => {
 
   return (
     <PageLayout activePage={activePage} setActivePage={setActivePage} thisPage={'Experience'}>
-      <div className="py-12 px-16  w-[1120px] overflow-auto">
+      <div className="py-12 px-16  w-[1120px] overflow-auto bg-curve-experience">
         <h1 className='page_title mb-8'>Experience</h1>
 
         <section className=''>

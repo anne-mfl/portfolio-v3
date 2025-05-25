@@ -4,12 +4,17 @@ import PageLayout from 'layout/PageLayout'
 const About = ({ activePage, setActivePage }) => {
   return (
     <PageLayout activePage={activePage} setActivePage={setActivePage} thisPage={'About'}>
-      <div className="py-12 px-16 w-[1120px] overflow-auto ">
+      <div className="py-8 px-16 w-[1120px] h-[754px] overflow-auto bg-curve-about">
         <h1 className='page_title mb-8'>About me</h1>
-        <section className='bg-custom_white py-8 px-12 text-lg '>
+        <section className='grid grid-cols-[1fr_1.5fr] items-center'>
+          <img
+            src='src/assets/bg_removed.png'
+            alt="Anne Lee"
+            className='w-58 rotate-10 justify-self-end mr-12'
+          />
           <p>
             Hi, Hola and こんにちは👋 I'm Anne.
-            <br/>
+            <br />
             I am a detail-oriented Frontend Developer
             based in Barcelona, Spain. I am passionate about crafting user-centric
             web experiences and transforming designs into responsive, pixel-perfect interfaces.
@@ -26,9 +31,7 @@ const About = ({ activePage, setActivePage }) => {
           </p>
         </section>
 
-        <div className='h-12'></div>
-
-        <section className='bg-custom_white py-8 px-12 text-lg tech_stack'>
+        <section className='pt-8 px-12 tech_stack'>
           Proficient in:
           <ul className='mb-4'>
             <li>React</li>
