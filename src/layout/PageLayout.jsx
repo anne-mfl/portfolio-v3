@@ -6,11 +6,11 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
       // className={`min-h-screen duration-500 ease-out
       className={`h-screen duration-500 ease-out
           ${activePage === thisPage ? 'flex-1 min-w-[200px]' : 'w-20'}
-          ${thisPage === 'Home' && 'bg-[#F6EEE9] text-[#2e2e2e]'}
-          ${thisPage === 'About' && 'bg-[#F3D8C7] text-[#2e2e2e]'}
-          ${thisPage === 'Experience' && 'bg-[#E8B9A6] text-[#2e2e2e]'}
-          ${thisPage === 'Projects' && 'bg-[#D99873] text-[#2e2e2e]'}
-          ${thisPage === 'Contact' && 'bg-[#514244] text-[#fdfcfb]'}
+          ${thisPage === 'Home' && 'bg-custom_navy text-custom_white'}
+          ${thisPage === 'About' && 'bg-custom_red text-custom_black'}
+          ${thisPage === 'Experience' && 'bg-custom_greyishblue text-custom_black'}
+          ${thisPage === 'Projects' && 'bg-custom_mustard text-custom_black'}
+          ${thisPage === 'Contact' && 'bg-custom_pink text-custom_black'}
         `}
       onClick={() => setActivePage(thisPage)}
     >
@@ -25,7 +25,7 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
           //     </h1>
           //   </div>
           : <div className='h-screen flex justify-center items-end'>
-            <h1 className={`${thisPage === 'Projects' || thisPage === 'Experience' ? 'text-custom_dark_yellow' : 'text-custom_yellow'} -rotate-90 my-12`}>
+            <h1 className={`${thisPage === 'Projects' || thisPage === 'Experience' || thisPage === 'Contact' ? 'text-custom_dark_yellow' : 'text-custom_yellow'} -rotate-90 my-12`}>
               {thisPage}
             </h1>
           </div>

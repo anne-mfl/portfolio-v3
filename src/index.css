@@ -2,33 +2,31 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brown: #491603;
-  --color-scarlet: #ae360d;
-  --color-gray_yellow: #c0baa7;
-  --color-ivory: #eceadc;
-  --color-white: #f7f7e9;
-
-  --color-custom_white: #F6EEE9;
-  --color-custom_pale: #F3D8C7;
-  --color-custom_peach: #E8B9A6;
-  --color-custom_orange: #D99873;
-  --color-custom_brown: #514244;
   --color-custom_yellow: #D4A11F;
   --color-custom_dark_yellow: #775c18;
+  --color-custom_black: #2e2e2e;
+  --color-custom_white: #fdfcfb;
+
+  --color-custom_navy: #1F3950;
+  --color-custom_red: #8f4949;
+  --color-custom_greyishblue: #7B92A5;
+  --color-custom_mustard: #D6AA6E;
+  --color-custom_pink: #D6AB9A;
 
   --font-gilroy: 'Gilroy', sans-serif;
   --font-playfair: 'Playfair Display', serif;
+  --font-ogg: 'Ogg', serif;
 }
 
 
 @layer components {
   .page_title {
-    @apply text-4xl font-bold font-playfair
+    @apply text-5xl font-bold font-playfair
   }
   .tech_stack {
     @apply [&>ul]:flex [&>ul]:flex-wrap [&>ul]:gap-1
-    [&_li]:bg-custom_orange [&_li]:w-fit [&_li]:py-1 [&_li]:px-3 [&_li]:rounded-full
-    [&_li]:text-sm [&_li]:whitespace-nowrap [&_li]:text-custom_brown
+    [&_li]:bg-custom_mustard [&_li]:w-fit [&_li]:py-1 [&_li]:px-3 [&_li]:rounded-full
+    [&_li]:text-sm [&_li]:whitespace-nowrap [&_li]:text-custom_navy
   }
 }
 
@@ -117,6 +115,46 @@
   font-family: 'Gilroy';
   src: url('./fonts/Gilroy-Black.ttf') format('truetype');
   font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src: url('./fonts/Ogg-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src: url('./fonts/Ogg-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src: url('./fonts/Ogg-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src: url('./fonts/Ogg-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src: url('./fonts/Ogg-Bold.ttf') format('truetype');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }

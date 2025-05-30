@@ -52,21 +52,21 @@ const Experience = ({ activePage, setActivePage }) => {
 
   return (
     <PageLayout activePage={activePage} setActivePage={setActivePage} thisPage={'Experience'}>
-      <div className="py-12 px-16  w-[1120px] overflow-auto bg-curve-experience">
-        <h1 className='page_title mb-8'>Experience</h1>
+      <div className="py-12 px-16  w-[1100px] overflow-auto bg-curve-experience">
+        <h1 className='page_title mb-6'>Experience</h1>
 
         <section className=''>
           {experiences.map((experience) => (
-            <div key={experience.where} className='border-b py-10 pl-6'>
+            <div key={experience.where} className='border-b py-8 pl-6 pr-12'>
               <div className='flex justify-between items-center'>
                 <div className='flex items-center gap-2'>
                   <h2 className='text-xl'>{experience.where}</h2>
                   {experience.website &&
-                    <a href={experience.website} target='_blank' rel='noopener noreferrer' className='hover:text-blue-600 text-sm'>
+                    <a href={experience.website} target='_blank' rel='noopener noreferrer' className='hover:text-custom_yellow text-sm'>
                       <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                     </a>}
                 </div>
-                <p className={`text-5xl mr-12 font-extralight cursor-pointer duration-300 ease-in-out transform ${showDetails[experience.where] ? 'rotate-45' : ''}`}
+                <p className={`text-5xl font-extralight cursor-pointer duration-300 ease-in-out transform hover:bg-custom_yellow/50 px-4 pt-2 rounded-full ${showDetails[experience.where] ? 'rotate-45' : ''}`}
                   onClick={() => setShowDetails((prev) => ({ ...prev, [experience.where]: !prev[experience.where] }))}
                 >+</p>
               </div>
@@ -97,7 +97,7 @@ const Experience = ({ activePage, setActivePage }) => {
 
         <div>
           <a href="">
-            <button className='rounded-full border border-[#2E2E2E] py-3 px-8 cursor-pointer hover:bg-[#2E2E2E] hover:text-custom_orange'>View CV</button>
+            <button className='rounded-full bg-custom_mustard border-none py-3 px-8 cursor-pointer hover:bg-[#2E2E2E] hover:text-custom_mustard'>View CV</button>
           </a>
         </div>
       </div>
