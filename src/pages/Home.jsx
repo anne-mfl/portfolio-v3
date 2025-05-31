@@ -9,8 +9,12 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 const Home = ({ activePage, setActivePage }) => {
   return (
     <PageLayout activePage={activePage} setActivePage={setActivePage} thisPage={'Home'}>
-      <div className='h-screen flex justify-start items-end w-[1120px] bg-curve-home'>
+      <div className='h-screen flex justify-start items-end w-[1120px] '>
         <main className='pb-16 pl-16'>
+          {/* <h1 className='page_title text-7xl font-bold relative z-10'>
+            Anne Lee
+            <div className='bg-[#1a2e40] h-28 w-70 -ml-16 -mt-20 z-0'>&nbsp;</div>
+          </h1> */}
           <h1 className='page_title text-7xl font-bold'>Anne Lee</h1>
           <h2 className='page_title text-xl font-semibold mb-8'>Frontend Developer</h2>
           <p className='mb-8'>

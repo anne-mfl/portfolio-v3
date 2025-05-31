@@ -92,12 +92,22 @@ const Projects = ({ activePage, setActivePage }) => {
 
   return (
     <PageLayout activePage={activePage} setActivePage={setActivePage} thisPage={'Projects'}>
-      <div className="py-12 px-16 w-[1120px] h-screen overflow-auto bg-curve-projects">
-        <h1 className='page_title mb-8'>Projects</h1>
+      <div className="py-12 px-16 w-[1120px] h-screen overflow-auto">
+      {/* <div
+        className="py-12 px-16 w-[1120px] h-screen overflow-auto bg-curve-contact bg-[position:top_-300px_left_-160px] bg-no-repeat bg-size-[760px]"
+        style={{ backgroundImage: "url('src/assets/shapes/yellow.svg')"}}
+      > */}
+        
+        <h1 className='page_title mb-8 text-[#e4c8a1]'>Projects</h1>
+        {/* <h1 className='page_title text-custom_white relative z-10'>
+          Projects
+          <div className='bg-[#c88c3c] h-24 w-72 -ml-16 -mt-16 z-0'>&nbsp;</div>
+        </h1> */}
+
         {projects.map((project) => (
           <div key={project.name}>
             <img src={`src/assets/projects/${project.name}.png`} alt={project.name} className='w-80 object-cover mb-4' />
-            <div className='flex items-center gap-2.5 mb-3'> 
+            <div className='flex items-center gap-2.5 mb-3'>
               <h2 className='text-2xl'>{project.title}</h2>
               {project.site &&
                 <a href={project.site} target='_blank' rel='noopener noreferrer' className='hover:text-custom_red text-sm'>
