@@ -5,18 +5,19 @@ const About = ({ activePage, setActivePage }) => {
   return (
     <PageLayout activePage={activePage} setActivePage={setActivePage} thisPage={'About'}>
 
-      <div className="py-12 px-16 w-[1120px] h-[754px] overflow-auto">
-      {/* <div
+      <div className="py-12 px-16 w-[1120px] h-[754px] overflow-auto relative">
+        {/* <div
         className="py-12 px-16 w-[1120px] h-screen overflow-auto bg-curve-contact bg-[position:top_-300px_left_-160px] bg-no-repeat bg-size-[600px]"
         style={{ backgroundImage: "url('src/assets/shapes/red.svg')"}}
       > */}
-      
-        <h1 className='page_title mb-12 text-[#aa5959]'>About me</h1>
+
+        <h1 className='page_title text-[#aa5959] absolute top-4 left-6'>About me</h1>
         {/* <h1 className='page_title relative z-10'>
           About me
           <div className='bg-[#733a3a] h-24 w-80 -ml-16 -mt-16 z-0'>&nbsp;</div>
         </h1> */}
 
+        <div className='h-28'></div>
 
         <main className='grid grid-cols-[1fr_1.6fr] items-center'>
           <img

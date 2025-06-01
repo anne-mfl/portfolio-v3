@@ -15,7 +15,7 @@ const Home = ({ activePage, setActivePage }) => {
             Anne Lee
             <div className='bg-[#1a2e40] h-28 w-70 -ml-16 -mt-20 z-0'>&nbsp;</div>
           </h1> */}
-          <h1 className='page_title text-7xl font-bold'>Anne Lee</h1>
+          <h1 className='page_title font-bold'>Anne Lee</h1>
           <h2 className='page_title text-xl font-semibold mb-8'>Frontend Developer</h2>
           <p className='mb-8'>
             <b>Frontend Developer</b> at <a href="https://www.cnag.eu/" className='underline text-custom_yellow'>CNAG</a> with 3+ years of

@@ -52,19 +52,19 @@ const Experience = ({ activePage, setActivePage }) => {
 
   return (
     <PageLayout activePage={activePage} setActivePage={setActivePage} thisPage={'Experience'}>
-      <div className="py-12 px-16 w-[1100px] overflow-auto">
+      <div className="py-10 px-16 w-[1100px] overflow-auto relative">
       {/* <div
         className="py-12 px-16 w-[1120px] h-screen overflow-auto bg-curve-contact bg-[position:top_-300px_left_-160px] bg-no-repeat bg-size-[760px]"
         style={{ backgroundImage: "url('src/assets/shapes/bluegrey.svg')"}}
       > */}
         
-        <h1 className='page_title mb-6 text-[#9daebd]'>Experience</h1>
+        <h1 className='page_title mb-6 text-[#9daebd] absolute top-4 left-6'>Experience</h1>
         {/* <h1 className='page_title text-custom_white relative z-10'>
           Experience
           <div className='bg-[#5d7589] h-24 w-88 -ml-16 -mt-16 z-0'>&nbsp;</div>
         </h1> */}
 
-        <section className=''>
+        <section className='mt-24'>
           {experiences.map((experience) => (
             <div key={experience.where} className='border-b py-8 pl-6 pr-12'>
               <div className='flex justify-between items-center'>

@@ -12,7 +12,7 @@ const Projects = ({ activePage, setActivePage }) => {
       using: ['React', 'Typescript', 'TailwindCSS', 'REST API', 'Plotly', 'Chart.js'],
       repo: '',
       site: '',
-      desc: '',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at eros eget eros tristique molestie ac quis neque. Ut pulvinar mauris ut dolor tincidunt pretium. Morbi eleifend imperdiet est nec interdum. Donec nec purus eget sem ultrices varius. Proin rhoncus neque eu enim rutrum, nec fringilla est luctus. Nam euismod euismod ipsum nec eleifend. Vivamus faucibus mollis est a euismod.',
 
     },
     {
@@ -29,7 +29,7 @@ const Projects = ({ activePage, setActivePage }) => {
       using: ['Astro', 'Preact', 'TailwindCSS'],
       repo: 'https://github.com/anne-mfl/designo-multipage-website',
       site: 'https://multipage-website-designo.netlify.app/',
-      desc: '',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at eros eget eros tristique molestie ac quis neque. Ut pulvinar mauris ut dolor tincidunt pretium.',
     },
     {
       name: 'kanban',
@@ -37,7 +37,7 @@ const Projects = ({ activePage, setActivePage }) => {
       using: ['Next.js', 'Typescript', 'Redux Toolkit', 'Sass'],
       repo: 'https://github.com/anne-mfl/kanban-task-management',
       site: 'https://kanban-task-management-quhg.vercel.app/',
-      desc: '',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at eros eget eros tristique molestie ac quis neque. Ut pulvinar mauris ut dolor tincidunt pretium.',
     },
     {
       name: 'promptopia',
@@ -45,7 +45,7 @@ const Projects = ({ activePage, setActivePage }) => {
       using: ['Next.js', 'NextAuth', 'MongoDB', 'TailwindCSS'],
       repo: 'https://github.com/anne-mfl/promptopia',
       site: 'https://promptopia-seven-ruby.vercel.app/',
-      desc: '',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at eros eget eros tristique molestie ac quis neque. Ut pulvinar mauris ut dolor tincidunt pretium.',
     },
     {
       name: 'audiophile',
@@ -53,7 +53,7 @@ const Projects = ({ activePage, setActivePage }) => {
       using: ['React', 'Typescript', 'Redux', 'TailwindCSS'],
       repo: 'https://github.com/anne-mfl/audiophile-ecommerce-website',
       site: 'https://anne-mfl.github.io/audiophile-ecommerce-website/',
-      desc: '',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at eros eget eros tristique molestie ac quis neque. Ut pulvinar mauris ut dolor tincidunt pretium.',
     },
     {
       name: 'bookmark',
@@ -61,7 +61,7 @@ const Projects = ({ activePage, setActivePage }) => {
       using: ['React', 'TypeScript', 'TailwindCSS'],
       repo: 'https://github.com/anne-mfl/bookmark-landing-page',
       site: 'https://anne-mfl.github.io/bookmark-landing-page/',
-      desc: '',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at eros eget eros tristique molestie ac quis neque. Ut pulvinar mauris ut dolor tincidunt pretium.',
     },
     {
       name: 'comments',
@@ -69,7 +69,7 @@ const Projects = ({ activePage, setActivePage }) => {
       using: ['React', 'Redux', 'TailwindCSS'],
       repo: 'https://github.com/anne-mfl/interactive-comments-section',
       site: 'https://anne-mfl.github.io/interactive-comments-section/',
-      desc: '',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at eros eget eros tristique molestie ac quis neque. Ut pulvinar mauris ut dolor tincidunt pretium.',
     },
     {
       name: 'v2',
@@ -77,7 +77,7 @@ const Projects = ({ activePage, setActivePage }) => {
       using: ['React', 'Typescript', 'TailwindCSS'],
       repo: 'https://github.com/anne-mfl/interactive-comments-section',
       site: 'https://anne-mfl.github.io/interactive-comments-section/',
-      desc: '',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at eros eget eros tristique molestie ac quis neque. Ut pulvinar mauris ut dolor tincidunt pretium.',
     },
     {
       name: 'v1',
@@ -85,41 +85,39 @@ const Projects = ({ activePage, setActivePage }) => {
       using: ['React', 'TailwindCSS'],
       repo: 'https://github.com/anne-mfl/interactive-comments-section',
       site: 'https://anne-mfl.github.io/interactive-comments-section/',
-      desc: '',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at eros eget eros tristique molestie ac quis neque. Ut pulvinar mauris ut dolor tincidunt pretium.',
     },
   ]
 
 
   return (
     <PageLayout activePage={activePage} setActivePage={setActivePage} thisPage={'Projects'}>
-      <div className="py-12 px-16 w-[1120px] h-screen overflow-auto">
-      {/* <div
-        className="py-12 px-16 w-[1120px] h-screen overflow-auto bg-curve-contact bg-[position:top_-300px_left_-160px] bg-no-repeat bg-size-[760px]"
-        style={{ backgroundImage: "url('src/assets/shapes/yellow.svg')"}}
-      > */}
-        
-        <h1 className='page_title mb-8 text-[#e4c8a1]'>Projects</h1>
-        {/* <h1 className='page_title text-custom_white relative z-10'>
-          Projects
-          <div className='bg-[#c88c3c] h-24 w-72 -ml-16 -mt-16 z-0'>&nbsp;</div>
-        </h1> */}
+      <div className="py-10 px-16 w-[1120px] h-screen overflow-auto relative">
+
+        <h1 className='page_title mb-12 text-[#e4c8a1] absolute top-4 left-6'>Projects</h1>
+
+        <div className='h-36'></div>
 
         {projects.map((project) => (
-          <div key={project.name}>
-            <img src={`src/assets/projects/${project.name}.png`} alt={project.name} className='w-80 object-cover mb-4' />
-            <div className='flex items-center gap-2.5 mb-3'>
-              <h2 className='text-2xl'>{project.title}</h2>
-              {project.site &&
-                <a href={project.site} target='_blank' rel='noopener noreferrer' className='hover:text-custom_red text-sm'>
-                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                </a>}
-            </div>
-            <div className='tech_stack [&_li]:bg-custom_red [&_li]:text-custom_pink mb-8'>
-              <ul>
-                {project.using.map((using) => (
-                  <li key={using}>{using}</li>
-                ))}
-              </ul>
+          <div key={project.name} className='flex items-center gap-8 mb-10'>
+            <img src={`src/assets/projects/${project.name}.png`} alt={project.name} className='w-80 object-cover' />
+            <div>
+              <div className='flex items-center gap-2.5 mb-3'>
+                <h2 className='text-2xl'>{project.title}</h2>
+                {project.site &&
+                  <a href={project.site} target='_blank' rel='noopener noreferrer' className='hover:text-custom_red text-sm'>
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                  </a>
+                }
+              </div>
+              <p className='opacity-80 text-sm mb-4'>{project.desc}</p>
+              <div className='tech_stack [&_li]:bg-custom_greyishblue [&_li]:text-custom_navy'>
+                <ul>
+                  {project.using.map((using) => (
+                    <li key={using}>{using}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         ))
