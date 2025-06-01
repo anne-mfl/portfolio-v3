@@ -7,7 +7,7 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
       className={`h-screen duration-500 ease-out
           ${activePage === thisPage ? 'flex-1 min-w-[200px]' : 'w-20'}
           ${thisPage === 'Home' && 'bg-custom_navy text-custom_white'}
-          ${thisPage === 'About' && 'bg-custom_red text-custom_black'}
+          ${thisPage === 'About' && 'bg-custom_red text-custom_white'}
           ${thisPage === 'Experience' && 'bg-custom_greyishblue text-custom_black'}
           ${thisPage === 'Projects' && 'bg-custom_mustard text-custom_black'}
           ${thisPage === 'Contact' && 'bg-custom_pink text-custom_black'}

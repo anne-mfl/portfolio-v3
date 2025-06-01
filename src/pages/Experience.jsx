@@ -58,7 +58,7 @@ const Experience = ({ activePage, setActivePage }) => {
         style={{ backgroundImage: "url('src/assets/shapes/bluegrey.svg')"}}
       > */}
         
-        <h1 className='page_title mb-6 text-[#9daebd] absolute top-4 left-6'>Experience</h1>
+        <h1 className='page_title mb-6 text-[#9daebd] absolute top-4 right-0'>Experience</h1>
         {/* <h1 className='page_title text-custom_white relative z-10'>
           Experience
           <div className='bg-[#5d7589] h-24 w-88 -ml-16 -mt-16 z-0'>&nbsp;</div>
@@ -106,7 +106,7 @@ const Experience = ({ activePage, setActivePage }) => {
 
         <div>
           <a href="">
-            <button className='rounded-full bg-custom_mustard border-none py-3 px-8 cursor-pointer hover:bg-[#2E2E2E] hover:text-custom_mustard'>View CV</button>
+            <button className='rounded-full bg-custom_mustard border-none py-3 px-8 cursor-pointer hover:bg-custom_black hover:text-custom_mustard'>View CV</button>
           </a>
         </div>
       </div>

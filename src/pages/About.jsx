@@ -11,7 +11,7 @@ const About = ({ activePage, setActivePage }) => {
         style={{ backgroundImage: "url('src/assets/shapes/red.svg')"}}
       > */}
 
-        <h1 className='page_title text-[#aa5959] absolute top-4 left-6'>About me</h1>
+        <h1 className='page_title text-[#aa5959] absolute top-4 right-6'>About me</h1>
         {/* <h1 className='page_title relative z-10'>
           About me
           <div className='bg-[#733a3a] h-24 w-80 -ml-16 -mt-16 z-0'>&nbsp;</div>
