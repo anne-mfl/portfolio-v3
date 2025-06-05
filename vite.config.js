@@ -15,6 +15,7 @@ export default defineConfig({
       pages: "/src/pages",
       layout: "/src/layout",
       assets: "/src/assets",
+      data: "/src/data",
     },
   },
 })
