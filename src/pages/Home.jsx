@@ -13,24 +13,21 @@ const Home = ({ activePage, setActivePage }) => {
       <div className='h-screen flex justify-start items-end w-[1120px] '>
         <section className='pb-16 pl-16'>
           <motion.div
-                key='home-header'
-                initial={{ y: '10%', opacity: 0 }}
-                animate={{ y: '0%', opacity: 1, transition: { duration: 0.4, delay: 0.5 } }}
-                exit={{ opacity: 0, y: "10%", transition: { duration: 0.4, delay: 0.4 } }}
-              >
-          {/* <HeaderWrapper additionalClassName={''}> */}
+            key='home-header'
+            initial={{ y: '10%', opacity: 0 }}
+            animate={{ y: '0%', opacity: 1, transition: { duration: 0.4, delay: 0.5 } }}
+            exit={{ opacity: 0, y: "10%", transition: { duration: 0.4, delay: 0.4 } }}
+          >
             <h1 className='page_title font-bold'>Anne Lee</h1>
             <h2 className='page_title text-xl font-semibold mb-8'>Frontend Developer</h2>
-          {/* </HeaderWrapper> */}
           </motion.div>
 
-          {/* <motion.div
-                key='home-main'
-                initial={{ y: '10%', opacity: 0 }}
-                animate={{ y: '0%', opacity: 1, transition: { duration: 0.4, delay: 0.8 } }}
-                exit={{ opacity: 0, y: "10%", transition: { duration: 0.4 } }}
-              > */}
-          <MainWrapper>
+          <motion.div
+            key='home-main'
+            initial={{ y: '10%', opacity: 0 }}
+            animate={{ y: '0%', opacity: 1, transition: { duration: 0.4, delay: 0.8 } }}
+            exit={{ opacity: 0, y: "10%", transition: { duration: 0.4 } }}
+          >
             <p className='mb-8'>
               Currently <b>Frontend Developer</b> at <a href="https://www.cnag.eu/" className='underline text-custom_yellow hover:text-custom_red'>CNAG</a> with 3+ years of
               <br />
@@ -51,8 +48,7 @@ const Home = ({ activePage, setActivePage }) => {
               <li><a href="https://www.linkedin.com/in/anne-gemma-lee/" className='hover:text-custom_red'><FontAwesomeIcon icon={faLinkedin} /></a></li>
               <li><a href="mailto:anne.gemma.lee@gmail.com" className='hover:text-custom_red'><FontAwesomeIcon icon={faEnvelope} /></a></li>
             </ul>
-          </MainWrapper>
-          {/* </motion.div> */}
+          </motion.div>
         </section>
       </div>
     </PageLayout>

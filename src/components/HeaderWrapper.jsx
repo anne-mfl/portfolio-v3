@@ -5,8 +5,8 @@ const HeaderWrapper = ({ children, additionalClassName }) => {
     <motion.h1
       key='header'
       initial={{ y: '100%', opacity: 0 }}
-      animate={{ y: '0%', opacity: 1, transition: { duration: 0.7, delay: 0.8 } }}
-      exit={{ opacity: 0, y: "50%", transition: { duration: 0.7, delay: 0.4 } }}
+      animate={{ y: '0%', opacity: 1, transition: { duration: 0.5, delay: 0.6 } }}
+      exit={{ opacity: 0, y: "100%", transition: { duration: 0.5, delay: 0.4 } }}
       className={`page_title ${additionalClassName}`}
     >
       {children}
