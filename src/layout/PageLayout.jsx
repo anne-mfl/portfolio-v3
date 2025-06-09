@@ -20,6 +20,7 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
   const isActive = activePage === thisPage;
 
   return (
+
     <motion.div
       key={thisPage}
       initial={thisPage === 'Home' ? {} : { y: '-100%', opacity: 0.5 }}
@@ -38,9 +39,12 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
 
       <AnimatePresence mode='wait'>
         {isActive ? (
-          <>
+          <div className={`py-10 px-16 overflow-auto relative 
+            ${thisPage === 'Home' && 'h-screen flex justify-start items-end'}
+            ${thisPage === 'Contact' && 'h-screen pb-2'}
+          `}>
             {children}
-          </>
+          </div>
         ) : (
           <motion.div
             key="tab"
