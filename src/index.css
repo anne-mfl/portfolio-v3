@@ -21,7 +21,7 @@
 
 @layer components {
   .page_title {
-    @apply text-8xl font-bold font-playfair tracking-wide
+    @apply text-8xl font-bold font-playfair tracking-wide max-lg:text-6xl
   }
   .tech_stack {
     @apply [&>ul]:flex [&>ul]:flex-wrap [&>ul]:gap-1

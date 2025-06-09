@@ -16,7 +16,9 @@ function App() {
     <BrowserRouter>
       {/* <Routes> */}
       {/* <Route path="/" element={<BaseLayout />} /> */}
-      <div className='font-gilroy flex bg-custom_navy'>
+      <div className='font-gilroy flex bg-custom_navy
+        max-lg:flex-col max-lg:h-screen
+      '>
         <Home activePage={activePage} setActivePage={setActivePage} />
         <About activePage={activePage} setActivePage={setActivePage} />
         <Experience activePage={activePage} setActivePage={setActivePage} />
