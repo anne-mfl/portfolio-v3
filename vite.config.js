@@ -16,6 +16,7 @@ export default defineConfig({
       layout: "/src/layout",
       assets: "/src/assets",
       data: "/src/data",
+      utils: "/src/utils",
     },
   },
 })

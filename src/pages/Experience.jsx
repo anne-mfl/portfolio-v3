@@ -19,7 +19,7 @@ const Experience = ({ activePage, setActivePage }) => {
         Experience
       </HeaderWrapper>
 
-      <MainWrapper additionalClassName={'mt-24'}>
+      <MainWrapper additionalClassName={'mt-24 max-lg:mt-16'}>
         {experiences.map((experience) => (
           <div key={experience.where} className='border-b py-8 pl-6 pr-12'>
             <div className='flex justify-between items-center'>

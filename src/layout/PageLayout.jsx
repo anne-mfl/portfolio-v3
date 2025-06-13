@@ -22,7 +22,7 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
       animate={thisPage === 'Home' ? {} : { y: '0%', opacity: 1, transition: { duration: 0.1, delay: getDelay() } }}
       exit={{ opacity: 0, y: "-100%", transition: { duration: 0.4, delay: 0.8 } }}
       className={`h-screen duration-500 delay-700 overflow-auto
-          ${activePage === thisPage ? 'flex-1 min-w-20 max-lg:min-h-14' : 'w-20 max-lg:h-14 max-lg:min-h-14 max-lg:w-full'}
+          ${activePage === thisPage ? 'flex-1 min-w-20 max-lg:min-h-10' : 'w-20 max-lg:h-10 max-lg:min-h-10 max-lg:w-full overflow-hidden'}
           ${thisPage === 'Home' && 'bg-custom_navy text-custom_white'}
           ${thisPage === 'About' && 'bg-custom_red text-custom_white'}
           ${thisPage === 'Experience' && 'bg-custom_greyishblue text-custom_black'}
@@ -34,9 +34,9 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
 
       <AnimatePresence mode='wait'>
         {isActive ? ( // Render page
-          <div className={`py-10 px-16 overflow-auto relative max-lg:h-full max-lg:px-8
-            ${thisPage === 'Home' && 'h-screen flex justify-start items-end max-lg:items-center'}
-            ${thisPage === 'Contact' && 'h-screen pb-2'}
+          <div className={`py-10 px-16 overflow-auto relative max-lg:h-full max-lg:px-4
+            ${thisPage === 'Home' && 'h-screen flex justify-start items-end'}
+            ${thisPage === 'Contact' && 'h-screen pb-2 max-lg:h-[calc(100dvh-160px)]'}
           `}>
             {children}
           </div>
@@ -47,11 +47,11 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
             animate={{ x: '0%', opacity: 1, transition: { duration: 0.5 } }}
             exit={{ x: "10%", opacity: 0, transition: { duration: 0.5 } }}
             className="h-screen flex justify-center items-end cursor-pointer
-             max-lg:items-start max-lg:justify-start
+             max-lg:items-center max-lg:justify-end max-lg:h-full
             "
           >
             <h1 className={`${thisPage === 'Home' || thisPage === 'About' ? 'text-custom_yellow' : 'text-custom_dark_yellow'} -rotate-90 py-12
-              max-lg:rotate-0 max-lg:py-4 max-lg:pl-6
+              max-lg:rotate-none max-lg:py-0 max-lg:px-6 
             `}>
               {thisPage}
             </h1>

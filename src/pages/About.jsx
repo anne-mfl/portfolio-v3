@@ -14,13 +14,13 @@ const About = ({ activePage, setActivePage }) => {
         About Me
       </HeaderWrapper>
 
-      <div className='h-28'></div>
+      <div className='h-28 max-lg:h-16'></div>
 
-      <MainWrapper additionalClassName={'grid grid-cols-[1fr_1.6fr] items-center'}>
+      <MainWrapper additionalClassName={'grid grid-cols-[1fr_1.6fr] items-center max-lg:grid-cols-1 max-lg:gap-8'}>
         <img
           src='src/assets/bg_removed.png'
           alt="Anne Lee"
-          className='w-68 rotate-10 justify-self-end mr-12'
+          className='w-68 rotate-10 justify-self-end mr-12 max-lg:w-32 max-lg:justify-self-center max-lg:mr-0'
         />
         <div>
           <p>

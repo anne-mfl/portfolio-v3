@@ -21,8 +21,9 @@ const Contact = ({ activePage, setActivePage }) => {
         Contact
       </HeaderWrapper>
 
-      <section className='flex flex-col justify-between h-full pt-36'>
-        <MainWrapper additionalClassName={'flex flex-col items-center justify-center text-center h-[calc(100vh-300px)]'}>
+      <section className='flex flex-col justify-between h-full'>
+        <div className='h-16'></div>
+        <MainWrapper additionalClassName={'flex flex-col items-center justify-center text-center'}>
           <p className='max-w-[440px] mb-12 text-lg'>
             I am looking for a <b>Frontend Developer</b> / <b>Full-stack Developer role</b> starting <b>January 2025</b>.
             <br />
