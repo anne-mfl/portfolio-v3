@@ -36,6 +36,7 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
         {isActive ? ( // Render page
           <div className={`py-10 px-16 overflow-auto relative max-lg:h-full max-lg:px-4
             ${thisPage === 'Home' && 'h-screen flex justify-start items-end'}
+            ${thisPage === 'Experience' && ''}
             ${thisPage === 'Contact' && 'h-screen pb-2 max-lg:h-[calc(100dvh-160px)]'}
           `}>
             {children}
