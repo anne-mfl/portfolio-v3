@@ -27,6 +27,7 @@
     @apply [&>ul]:flex [&>ul]:flex-wrap [&>ul]:gap-1
     [&_li]:bg-custom_mustard [&_li]:w-fit [&_li]:py-1 [&_li]:px-3 [&_li]:rounded-full
     [&_li]:text-sm [&_li]:whitespace-nowrap [&_li]:text-custom_navy
+    max-lg:[&_li]:text-[0.7rem]
   }
 }
 
