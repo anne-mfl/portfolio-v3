@@ -25,13 +25,13 @@ const Home = ({ activePage, setActivePage }) => {
           animate={{ y: '0%', opacity: 1, transition: { duration: 0.4, delay: 0.8 } }}
           exit={{ opacity: 0, y: "10%", transition: { duration: 0.4 } }}
         >
-          <p className='mb-8'>
-            Currently <b>Frontend Developer</b> at <a href="https://www.cnag.eu/" className='underline text-custom_yellow hover:text-custom_red'>CNAG</a> with 3+ years of
-            <br />
+          <p className='mb-8 max-md:text-sm'>
+            Currently <b>Frontend Developer</b> at <a href="https://www.cnag.eu/" target='_blank' className='underline text-custom_yellow hover:text-custom_red'>CNAG</a> with 3+ years of
+            <br className='max-sm:hidden'/>
             experience turning ideas into fast, intuitive web apps.
-            <br />
+            <br className='max-sm:hidden'/>
             Also skilled in <b>Backend Development</b> and
-            <br />
+            <br className='max-sm:hidden'/>
             an <b>AWS Certified Cloud Practitioner</b>.
           </p>
           {/* <ul className='[&>li]:list-none mb-8'>
@@ -41,9 +41,9 @@ const Home = ({ activePage, setActivePage }) => {
                   <li> ☁️&nbsp;&nbsp;AWS Certified Cloud Practitioner</li>
                 </ul> */}
           <ul className='flex gap-4 [&>li]:text-2xl'>
-            <li><a href="https://github.com/anne-mfl" className='hover:text-custom_red'><FontAwesomeIcon icon={faGithub} /></a></li>
-            <li><a href="https://www.linkedin.com/in/anne-gemma-lee/" className='hover:text-custom_red'><FontAwesomeIcon icon={faLinkedin} /></a></li>
-            <li><a href="mailto:anne.gemma.lee@gmail.com" className='hover:text-custom_red'><FontAwesomeIcon icon={faEnvelope} /></a></li>
+            <li><a href="https://github.com/anne-mfl" target='_blank' className='hover:text-custom_red'><FontAwesomeIcon icon={faGithub} /></a></li>
+            <li><a href="https://www.linkedin.com/in/anne-gemma-lee/" target='_blank' className='hover:text-custom_red'><FontAwesomeIcon icon={faLinkedin} /></a></li>
+            <li><a href="mailto:anne.gemma.lee@gmail.com" target='_blank' className='hover:text-custom_red'><FontAwesomeIcon icon={faEnvelope} /></a></li>
           </ul>
         </motion.div>
       </section>

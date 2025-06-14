@@ -10,7 +10,7 @@ import Contact from 'pages/Contact'
 
 function App() {
 
-  const [activePage, setActivePage] = useState('Experience')
+  const [activePage, setActivePage] = useState('Home')
 
   return (
     <BrowserRouter>

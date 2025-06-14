@@ -35,8 +35,7 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
       <AnimatePresence mode='wait'>
         {isActive ? ( // Render page
           <div className={`py-10 px-16 overflow-auto relative max-lg:h-full max-lg:px-4
-            ${thisPage === 'Home' && 'h-screen flex justify-start items-end'}
-            ${thisPage === 'Experience' && ''}
+            ${thisPage === 'Home' && 'h-screen flex justify-start items-end max-lg:pl-4 max-sm:pr-8'}
             ${thisPage === 'Contact' && 'h-screen pb-2 max-lg:h-[calc(100dvh-160px)]'}
           `}>
             {children}

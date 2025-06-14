@@ -38,9 +38,9 @@ const Contact = ({ activePage, setActivePage }) => {
           </div>
 
           <ul className='flex gap-6 [&>li]:text-2xl'>
-            <li><a href="https://github.com/anne-mfl" className='hover:text-custom_red'><FontAwesomeIcon icon={faGithub} /></a></li>
-            <li><a href="https://www.linkedin.com/in/anne-gemma-lee/" className='hover:text-custom_red'><FontAwesomeIcon icon={faLinkedin} /></a></li>
-            <li><a href="mailto:anne.gemma.lee@gmail.com" className='hover:text-custom_red'><FontAwesomeIcon icon={faEnvelope} /></a></li>
+            <li><a href="https://github.com/anne-mfl" target='_blank' className='hover:text-custom_red'><FontAwesomeIcon icon={faGithub} /></a></li>
+            <li><a href="https://www.linkedin.com/in/anne-gemma-lee/" target='_blank' className='hover:text-custom_red'><FontAwesomeIcon icon={faLinkedin} /></a></li>
+            <li><a href="mailto:anne.gemma.lee@gmail.com" target='_blank' className='hover:text-custom_red'><FontAwesomeIcon icon={faEnvelope} /></a></li>
           </ul>
 
         </MainWrapper>
