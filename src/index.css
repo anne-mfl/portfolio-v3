@@ -31,23 +31,6 @@
   }
 }
 
-
-
-
-/* @layer components {
-  .text_h1 {
-    font-size: 3rem; 
-    font-weight: 500;
-    line-height: 1;  
-    @media (max-width: 640px) {
-      font-size: 2rem; 
-      line-height: 1.125; 
-    }
-  }
-} */
-
-
-
 @font-face {
   font-family: 'Gilroy';
   src: url('./fonts/Gilroy-Thin.ttf') format('truetype');

@@ -1,6 +1,12 @@
+/* Works in Chrome, Safari, and Edge (WebKit browsers) */
 ::-webkit-scrollbar {
-  width: 0px;
-}
-::-webkit-scrollbar-track {
   display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Works in Firefox */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge (legacy) */
 }
