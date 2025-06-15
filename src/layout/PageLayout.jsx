@@ -1,6 +1,18 @@
+import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react"
 
 const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth)
+      console.log(`Screen width: ${window.innerWidth}px`)
+    }
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
 
   const getDelay = () => {
     switch (thisPage) {
@@ -15,11 +27,22 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
   const isActive = activePage === thisPage;
 
   return (
-
     <motion.div
       key={thisPage}
-      initial={thisPage === 'Home' ? {} : { y: '-100%', opacity: 0.5 }}
-      animate={thisPage === 'Home' ? {} : { y: '0%', opacity: 1, transition: { duration: 0.1, delay: getDelay() } }}
+      initial={
+        thisPage === 'Home'
+          ? {}
+          : screenWidth > 1023
+            ? { y: '-100%', opacity: 0.5 }
+            : { x: '-100%', opacity: 0.5 }
+      }
+      animate={
+        thisPage === 'Home'
+          ? {}
+          : screenWidth > 1023
+            ? { y: '0%', opacity: 1, transition: { duration: 0.1, delay: getDelay() } }
+            : { x: '0%', opacity: 1, transition: { duration: 0.1, delay: getDelay() } }
+      }
       exit={{ opacity: 0, y: "-100%", transition: { duration: 0.4, delay: 0.8 } }}
       className={`h-screen duration-500 delay-700 overflow-auto
           ${activePage === thisPage ? 'flex-1 min-w-20 max-lg:min-h-10' : 'w-20 max-lg:h-10 max-lg:min-h-10 max-lg:w-full overflow-hidden'}
@@ -47,7 +70,7 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
             animate={{ x: '0%', opacity: 1, transition: { duration: 0.5 } }}
             exit={{ x: "10%", opacity: 0, transition: { duration: 0.5 } }}
             className="h-screen flex justify-center items-end cursor-pointer
-             max-lg:items-center max-lg:justify-end max-lg:h-full
+             max-lg:h-full max-lg:items-center max-lg:justify-end 
             "
           >
             <h1 className={`${thisPage === 'Home' || thisPage === 'About' ? 'text-custom_yellow' : 'text-custom_dark_yellow'} -rotate-90 py-12
