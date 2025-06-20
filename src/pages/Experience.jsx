@@ -73,7 +73,7 @@ const Experience = ({ activePage, setActivePage }) => {
           </section>
 
           <section className='mt-6'>
-            <a href="">
+            <a href="Anne_Lee_CV.pdf" target='_blank'>
               <button className='rounded-full bg-custom_mustard border-none py-3 px-8 cursor-pointer hover:bg-custom_black hover:text-custom_mustard'>
                 View CV
               </button>
