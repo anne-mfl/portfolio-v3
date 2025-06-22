@@ -71,10 +71,13 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
             exit={{ x: "10%", opacity: 0, transition: { duration: 0.5 } }}
             className="h-screen flex justify-center items-end cursor-pointer
              max-lg:h-full max-lg:items-center max-lg:justify-end 
+             group
             "
           >
             <h1 className={`${thisPage === 'Home' || thisPage === 'About' ? 'text-custom_yellow' : 'text-custom_dark_yellow'} -rotate-90 py-12
               max-lg:rotate-none max-lg:py-0 max-lg:px-6 
+              transition group-hover:-translate-y-10 group-hover:duration-300
+              max-lg:group-hover:-translate-x-10  max-lg:group-hover:translate-y-0 
             `}>
               {thisPage}
             </h1>

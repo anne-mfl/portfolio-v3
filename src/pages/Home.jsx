@@ -27,11 +27,14 @@ const Home = ({ activePage, setActivePage }) => {
         >
           <p className='mb-8 max-md:text-sm'>
             Currently <b>Frontend Developer</b> at <a href="https://www.cnag.eu/" target='_blank' className='underline text-custom_yellow hover:text-custom_red'>CNAG</a> with 3+ years of
-            <br className='max-sm:hidden'/>
+            <span>&nbsp;</span>
+            <br className='max-sm:hidden' />
             experience turning ideas into fast, intuitive web apps.
-            <br className='max-sm:hidden'/>
+            <span>&nbsp;</span>
+            <br className='max-sm:hidden' />
             Also skilled in <b>Backend Development</b> and
-            <br className='max-sm:hidden'/>
+            <span>&nbsp;</span>
+            <br className='max-sm:hidden' />
             an <b>AWS Certified Cloud Practitioner</b>.
           </p>
           {/* <ul className='[&>li]:list-none mb-8'>

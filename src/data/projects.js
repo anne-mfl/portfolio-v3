@@ -2,7 +2,7 @@ export  const projects = [
     {
       name: '3domics',
       title: "3d'omics Data Portal",
-      using: ['React', 'Typescript', 'TailwindCSS', 'REST API', 'Plotly', 'Chart.js'],
+      using: ['React', 'Typescript', 'TailwindCSS', 'REST API', 'Plotly', 'Chart.js', 'Vitest', 'Cypress'],
       repo: '',
       site: '',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at eros eget eros tristique molestie ac quis neque. Ut pulvinar mauris ut dolor tincidunt pretium. Morbi eleifend imperdiet est nec interdum. Donec nec purus eget sem ultrices varius. Proin rhoncus neque eu enim rutrum, nec fringilla est luctus. Nam euismod euismod ipsum nec eleifend. Vivamus faucibus mollis est a euismod.',

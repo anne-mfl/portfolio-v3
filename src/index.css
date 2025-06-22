@@ -15,7 +15,6 @@
 
   --font-gilroy: 'Gilroy', sans-serif;
   --font-playfair: 'Playfair Display', serif;
-  --font-ogg: 'Ogg', serif;
 }
 
 
@@ -103,42 +102,3 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Ogg';
-  src: url('./fonts/Ogg-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Ogg';
-  src: url('./fonts/Ogg-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Ogg';
-  src: url('./fonts/Ogg-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Ogg';
-  src: url('./fonts/Ogg-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Ogg';
-  src: url('./fonts/Ogg-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}

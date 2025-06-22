@@ -6,6 +6,7 @@ import About from 'pages/About'
 import Experience from 'pages/Experience'
 import Projects from 'pages/Projects'
 import Contact from 'pages/Contact'
+import Logo from 'pages/Logo';
 
 
 function App() {
@@ -25,6 +26,11 @@ function App() {
         <Projects activePage={activePage} setActivePage={setActivePage} />
         <Contact activePage={activePage} setActivePage={setActivePage} />
       </div >
+
+      <Routes>
+        <Route path='logo' element={<Logo />} />
+      </Routes>
+
     </BrowserRouter>
   )
 }
