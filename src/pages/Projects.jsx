@@ -10,6 +10,15 @@ const Projects = ({ activePage, setActivePage }) => {
 
   const thisPage = 'Projects'
 
+  const projectImages = import.meta.glob("../assets/projects/*.png", { eager: true });
+
+  const images = Object.fromEntries(
+    Object.entries(projectImages).map(([path, module]) => {
+      const fileName = path.split("/").pop().replace(".png", "");
+      return [fileName, module.default];
+    })
+  );
+
   return (
     <PageLayout activePage={activePage} setActivePage={setActivePage} thisPage={thisPage}>
       <HeaderWrapper thisPage={thisPage}>
@@ -26,7 +35,8 @@ const Projects = ({ activePage, setActivePage }) => {
             max-xl:flex-col max-md:mx-12 max-md:mb-10 max-sm:mx-0
            '>
             <img
-              src={`src/assets/projects/${project.name}.png`}
+              // src={`src/assets/projects/${project.name}.png`}
+              src={images[project.name]}
               alt={project.name}
               className='w-80 object-cover rounded-md opacity-90 group-hover:opacity-100 duration-100 shadow-lg hover:shadow-xl'
             />
