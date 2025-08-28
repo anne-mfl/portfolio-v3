@@ -26,7 +26,7 @@ const Home = ({ activePage, setActivePage }) => {
           exit={{ opacity: 0, y: "10%", transition: { duration: 0.4 } }}
         >
           <p className='mb-8 max-md:text-sm'>
-            Currently <b>Frontend Developer</b> at <a href="https://www.cnag.eu/" target='_blank' className='underline text-custom_yellow hover:text-custom_red'>CNAG</a> with 3+ years of
+            Currently a <b>Frontend Developer</b> at <a href="https://www.cnag.eu/" target='_blank' className='underline text-custom_yellow hover:text-custom_red'>CNAG</a> with 3+ years of
             <span>&nbsp;</span>
             <br className='max-sm:hidden' />
             experience turning ideas into fast, intuitive web apps.

@@ -5,8 +5,8 @@ export const experiences = [
     period: 'June 2024 - Present',
     descriptions: [
       'Create data visualization platform for a research project',
-      'Design and build a new web site for the lab',
-      'Develop full-stack management app for the lab',
+      'Design and build a new web site for a lab group',
+      'Develop full-stack management app for a lab group',
     ],
     stacks: ['React', 'JS', 'TS', 'Tailwind CSS', 'Plotly', 'Node.js', 'Express', 'SQLite', 'REST API', 'Git'],
     website: 'https://www.cnag.eu/'

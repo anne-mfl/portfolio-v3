@@ -37,10 +37,10 @@ const Projects = ({ activePage, setActivePage }) => {
                 </h2>
                 {project.site &&
                   <div className='flex gap-2 max-md:gap-4'>
-                    <a href={project.site} target='_blank' rel='noopener noreferrer' className='hover:bg-custom_greyishblue text-sm bg-custom_greyishblue/50 rounded-full px-2 py-1 max-lg:text-xs max-lg:px-1.5'>
+                    <a href={project.site} target='_blank' rel='noopener noreferrer' className='hover:bg-custom_greyishblue text-sm bg-custom_greyishblue/70 rounded-full px-2 pt-1.5 pb-1 max-lg:text-xs max-lg:px-1.5'>
                       <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                     </a>
-                    <a href={project.repo} target='_blank' rel='noopener noreferrer' className='hover:bg-custom_greyishblue text-sm bg-custom_greyishblue/50 rounded-full px-1.5 py-1 max-lg:text-xs max-lg:px-1.5'>
+                    <a href={project.repo} target='_blank' rel='noopener noreferrer' className='hover:bg-custom_greyishblue text-sm bg-custom_greyishblue/70 rounded-full px-1.5 pt-1.5 pb-1 max-lg:text-xs max-lg:px-1.5'>
                       <FontAwesomeIcon icon={faCode} />
                     </a>
                   </div>

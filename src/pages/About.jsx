@@ -18,10 +18,16 @@ const About = ({ activePage, setActivePage }) => {
 
       <MainWrapper additionalClassName={'grid grid-cols-[1fr_1.6fr] items-center max-lg:grid-cols-1 max-lg:gap-8'}>
         <img
+          src='src/assets/pic2.jpg'
+          alt="Anne Lee"
+          className='w-76 grayscale hover:grayscale-0 rounded-xs justify-self-end mr-16 max-xl:mr-8 max-lg:w-52 max-lg:justify-self-center max-lg:mr-0'
+        />
+        {/* <img src='src/assets/line.svg' />
+        <img
           src='src/assets/bg_removed.png'
           alt="Anne Lee"
           className='w-68 rotate-10 justify-self-end mr-12 max-lg:w-32 max-lg:justify-self-center max-lg:mr-0'
-        />
+        /> */}
         <div>
           <p>
             Hi, Hola and こんにちは👋 I'm Anne.

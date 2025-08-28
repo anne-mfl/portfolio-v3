@@ -8,7 +8,7 @@ const PageLayout = ({ children, activePage, setActivePage, thisPage }) => {
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth)
-      console.log(`Screen width: ${window.innerWidth}px`)
+      // console.log(`Screen width: ${window.innerWidth}px`)
     }
     window.addEventListener("resize", handleResize)
     return () => window.removeEventListener("resize", handleResize)
