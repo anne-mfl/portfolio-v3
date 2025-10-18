@@ -25,7 +25,7 @@ const Contact = ({ activePage, setActivePage }) => {
         <div className='h-16'></div>
         <MainWrapper additionalClassName={'flex flex-col items-center justify-center text-center'}>
           <p className='max-w-[500px] mb-8 text-lg max-md:text-base max-md:px-4'>
-            I am looking for a <b>Frontend Developer</b> / <b>Full-stack Developer role</b> starting <b>January&nbsp;2025</b>.
+            I am looking for a <b>Frontend Developer</b> / <b>Full-stack Developer role</b> starting <b>January&nbsp;2026</b>.
             Feel free to reach out if you think I would be a good fit for your team or if you just want to say hi!
           </p>
 
