@@ -42,7 +42,7 @@ const Projects = ({ activePage, setActivePage }) => {
             key={project.name}
             className='flex items-center gap-12 mb-14 group hover:bg-custom_yellow/40 
             hover:shadow-xl pr-4 pl-8 pt-5 pb-7 duration-100 rounded-md hover:-translate-y-1
-            max-xl:flex-col max-md:mx-12 max-md:mb-10 max-sm:mx-0'
+            max-xl:flex-col max-xl:px-4 max-md:mx-12 max-md:mb-10 max-sm:mx-0'
           >
             {/* <img
               src={`src/assets/projects/${project.name}_0.png`}
