@@ -7,7 +7,7 @@ export const projects = [
     site: 'http://www.3domics.eu/database/',
     desc: 'A data portal for a scientific initiative funded under the EU Horizon 2020 program. The project involved handling large-scale datasets with thousands of records and transforming them into functional data tables and interactive visualizations. ',
     // desc: 'A data portal for a scientific initiative funded under the EU Horizon 2020 program. The project involved handling large-scale datasets with thousands of records and transforming them into functional data tables and interactive visualizations. I was responsible for the entire frontend lifecycle, including UI design, implementation, testing, performance optimization, and deployment, with a strong focus on usability and data clarity.',
-    images: ['3domics_0', '3domics_1', '3domics_2']
+    images: ['3domics_0', '3domics_1', '3domics_2', '3domics_3']
   },
   {
     name: 'sgt',
