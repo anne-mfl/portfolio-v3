@@ -4,6 +4,7 @@ import { faArrowUpRightFromSquare, faCode } from '@fortawesome/free-solid-svg-ic
 import { projects } from 'data/projects'
 import HeaderWrapper from 'components/HeaderWrapper'
 import MainWrapper from 'components/MainWrapper'
+import Slider from "react-slick"
 
 
 const Projects = ({ activePage, setActivePage }) => {
@@ -19,6 +20,14 @@ const Projects = ({ activePage, setActivePage }) => {
     })
   );
 
+  const carouselSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+
   return (
     <PageLayout activePage={activePage} setActivePage={setActivePage} thisPage={thisPage}>
       <HeaderWrapper thisPage={thisPage}>
@@ -31,15 +40,33 @@ const Projects = ({ activePage, setActivePage }) => {
         {projects.map((project) => (
           <div
             key={project.name}
-            className='flex items-center gap-8 mb-14 group hover:bg-custom_yellow/40 hover:shadow-xl px-4 py-5 duration-100 rounded-md hover:-translate-y-1
-            max-xl:flex-col max-md:mx-12 max-md:mb-10 max-sm:mx-0
-           '>
-            <img
-              // src={`src/assets/projects/${project.name}.png`}
-              src={images[project.name]}
+            className='flex items-center gap-12 mb-14 group hover:bg-custom_yellow/40 
+            hover:shadow-xl pr-4 pl-8 pt-5 pb-7 duration-100 rounded-md hover:-translate-y-1
+            max-xl:flex-col max-md:mx-12 max-md:mb-10 max-sm:mx-0'
+          >
+            {/* <img
+              src={`src/assets/projects/${project.name}_0.png`}
+              // src={images[project.name]}
               alt={project.name}
               className='w-80 object-cover rounded-md opacity-90 group-hover:opacity-100 duration-100 shadow-lg hover:shadow-xl'
-            />
+            /> */}
+
+            <div className="w-80">
+              <Slider {...carouselSettings}>
+                {project.images.map((image, i) => (
+                    <img
+                      // src={`/src/assets/projects/${image}.png`}
+                      src={new URL(`../assets/projects/${image}.png`, import.meta.url).href}
+                      alt={project.name}
+                      className='w-80 h-[180px] object-contain rounded-md opacity-80 
+                      group-hover:opacity-100 duration-100 hover:shadow-xl'
+                      key={image}
+                    />
+                ))}
+              </Slider>
+            </div>
+
+
             <div>
               <div className='flex items-center gap-2.5 mb-3 max-xl:justify-center max-lg:flex-col max-lg:gap-1'>
                 <h2 className='text-2xl group-hover:font-semibold duration-100 max-md:text-xl max-md:font-medium'>

@@ -26,10 +26,13 @@ const Home = ({ activePage, setActivePage }) => {
           exit={{ opacity: 0, y: "10%", transition: { duration: 0.4 } }}
         >
           <p className='mb-8 max-md:text-sm'>
-            Currently a <b>Frontend Developer</b> at <a href="https://www.cnag.eu/" target='_blank' className='underline text-custom_yellow hover:text-custom_red'>CNAG</a> with 3+ years of
+            <b>React Frontend Developer</b> with 3+ years of
             <span>&nbsp;</span>
             <br className='max-sm:hidden' />
             experience turning ideas into fast, intuitive web apps.
+            {/* <span>&nbsp;</span>
+            <br className='max-sm:hidden' />
+            based in <b>Spain</b>. */}
             <span>&nbsp;</span>
             <br className='max-sm:hidden' />
             Also skilled in <b>Backend Development</b> and

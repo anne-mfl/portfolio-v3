@@ -19,7 +19,6 @@ const About = ({ activePage, setActivePage }) => {
       <MainWrapper additionalClassName={'grid grid-cols-[1fr_1.6fr] items-center max-lg:grid-cols-1 max-lg:gap-8'}>
         <img
           src={pic}
-          // src='src/assets/pic.jpg'
           alt="Anne Lee"
           className='w-76 grayscale hover:grayscale-0 rounded-xs justify-self-end mr-16 max-xl:mr-8 max-lg:w-52 max-lg:justify-self-center max-lg:mr-0'
         />
@@ -28,23 +27,30 @@ const About = ({ activePage, setActivePage }) => {
             Hi, Hola and こんにちは👋 I'm Anne.
             <br />
             I am a detail-oriented Frontend Developer
-            based in Barcelona, Spain. I am passionate about crafting user-centric
-            web experiences and transforming designs into responsive, pixel-perfect interfaces.
+            based in Spain, passionate about crafting user-centric
+            web experiences and translating designs into responsive, pixel-perfect interfaces.
             <br /><br />
             I come from a non-technical background, having transitioned from
             a career in dancing and translating to web development in 2021.
             After completing a full-stack coding bootcamp, I worked as a
-            Frontend Developer at a startup building an NFT marketplace and
-            later at a venture capital firm.
+            Frontend Developer at a startup building an NFT marketplace,
+            a venture capital firm, and at a scientific research institute.
             <br /><br />
-            Currently, I work at one of Europe's largest genome sequencing
-            centers, where I develop a data visualization platform for a research
-            project and a full-stack management app for the lab group.
+            Throughout my career, I have often been the sole frontend developer,
+            which gave me full ownership of the frontend lifecycle, strong accountability,
+            and the ability to make technical decisions independently.
+            This experience also required me to learn quickly and adapt to new challenges.
+            I have built products such as a Customer Relationship Management (CRM) application,
+            a data portal handling large datasets with interactive data visualizations,
+            and a full-stack Content Management System developed from the ground up.
+            <br /><br />
+            Currently, I am looking for a Frontend Developer position or a Full-stack Developer (Frontend-heavy) position, preferrably in remote. 
+            I am also open for a project-based opportunities, and can commute to Barcelona occasionally.
           </p>
 
           <section className='pt-8 tech_stack'>
-            Proficient in:
-            <ul className='mb-4 mt-1'>
+            Tech Stack:
+            <ul className='mt-1'>
               <li>React</li>
               <li>Next.js</li>
               <li>Astro</li>
@@ -52,16 +58,16 @@ const About = ({ activePage, setActivePage }) => {
               <li>TypeScript</li>
               <li>Apollo GraphQL</li>
               <li>REST API</li>
-              <li>Redux</li>
+              <li>Redux Toolkit</li>
               <li>Jest</li>
               <li>Vitest</li>
+              <li>React Testing Library</li>
               <li>Cypress</li>
               <li>HTML</li>
               <li>CSS (TailwindCSS, CSS-in-JS, Sass)</li>
-            </ul>
-
-            And also have experience with:
-            <ul className='mt-1'>
+              <li>Plotly</li>
+              <li>Chart.js</li>
+              <li>D3.js</li>
               <li>Node.js</li>
               <li>Express</li>
               <li>MongoDB</li>

@@ -12,7 +12,8 @@ import CVViewer from 'pages/CVViewer';
 
 function App() {
 
-  const [activePage, setActivePage] = useState('Home')
+  const [activePage, setActivePage] = useState('Projects')
+  // const [activePage, setActivePage] = useState('Home')
 
   return (
     <BrowserRouter>
