@@ -68,7 +68,7 @@ const Projects = ({ activePage, setActivePage }) => {
 
 
             <div>
-              <div className='flex items-center gap-2.5 mb-3 max-xl:justify-center max-lg:flex-col max-lg:gap-1'>
+              <div className='flex items-center gap-2.5 mb-3 max-xl:justify-center max-lg:flex-col max-lg:text-center max-lg:gap-1'>
                 <h2 className='text-2xl group-hover:font-semibold duration-100 max-md:text-xl max-md:font-medium'>
                   {project.title}
                 </h2>
@@ -84,8 +84,8 @@ const Projects = ({ activePage, setActivePage }) => {
                 }
               </div>
               <p className='opacity-80 text-sm mb-4 max-xl:text-center'>{project.desc}</p>
-              <div className='tech_stack [&_li]:bg-custom_greyishblue [&_li]:text-custom_navy'>
-                <ul className='max-xl:w-fit max-xl:mx-auto'>
+              <div className='tech_stack [&_li]:bg-custom_greyishblue [&_li]:text-custom_navy max-xl:[&>ul]:justify-center'>
+                <ul className='max-xl:w-fit max-xl:mx-auto max-xl:'>
                   {project.using.map((using) => (
                     <li key={using}>{using}</li>
                   ))}
