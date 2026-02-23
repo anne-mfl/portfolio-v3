@@ -11,7 +11,8 @@ const Projects = ({ activePage, setActivePage }) => {
 
   const thisPage = 'Projects'
 
-  const projectImages = import.meta.glob("../assets/projects/*.png", { eager: true });
+  const projectImages = import.meta.glob("../assets/projects/*.png");
+  // const projectImages = import.meta.glob("../assets/projects/*.png", { eager: true });
 
   const images = Object.fromEntries(
     Object.entries(projectImages).map(([path, module]) => {
@@ -44,24 +45,30 @@ const Projects = ({ activePage, setActivePage }) => {
             hover:shadow-xl pr-4 pl-8 pt-5 pb-7 duration-100 rounded-md hover:-translate-y-1
             max-xl:flex-col max-xl:px-4 max-md:mx-12 max-md:mb-10 max-sm:mx-0'
           >
-            {/* <img
-              src={`src/assets/projects/${project.name}_0.png`}
-              // src={images[project.name]}
-              alt={project.name}
-              className='w-80 object-cover rounded-md opacity-90 group-hover:opacity-100 duration-100 shadow-lg hover:shadow-xl'
-            /> */}
 
             <div className="w-80">
               <Slider {...carouselSettings}>
                 {project.images.map((image, i) => (
-                    <img
-                      // src={`/src/assets/projects/${image}.png`}
-                      src={new URL(`../assets/projects/${image}.png`, import.meta.url).href}
-                      alt={project.name}
-                      className='w-80 h-[180px] object-contain rounded-md opacity-80 
-                      group-hover:opacity-100 duration-100 hover:shadow-xl'
-                      key={image}
+                  // <img
+                  //   src={new URL(`../assets/projects/${image}.png`, import.meta.url).href}
+                  //   alt={project.name}
+                  //   className='w-80 h-[180px] object-contain rounded-md opacity-80 
+                  //   group-hover:opacity-100 duration-100 hover:shadow-xl'
+                  //   key={image}
+                  // />
+                  <picture>
+                    <source
+                      srcSet={new URL(`../assets/projects-optimized/${image}.webp`, import.meta.url).href}
+                      type="image/webp"
                     />
+                    <img
+                      src={new URL(`../assets/projects/${image}.png`, import.meta.url).href}
+                      alt={`${project.name} ${i + 1}`}
+                      className='w-80 h-[180px] object-contain rounded-md opacity-80 
+                                group-hover:opacity-100 duration-100'
+                      loading="lazy"
+                    />
+                  </picture>
                 ))}
               </Slider>
             </div>
