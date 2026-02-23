@@ -16,7 +16,7 @@ const About = ({ activePage, setActivePage }) => {
 
       <div className='h-28 max-lg:h-16'></div>
 
-      <MainWrapper additionalClassName={'grid grid-cols-[1fr_1.6fr] items-center max-lg:grid-cols-1 max-lg:gap-8'}>
+      <MainWrapper additionalClassName={'grid grid-cols-[1fr_1.6fr] items-center max-lg:grid-cols-1 max-lg:gap-8 min-h-[calc(100dvh-192px)]'}>
         <img
           src={pic}
           alt="Anne Lee"

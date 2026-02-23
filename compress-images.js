@@ -1,3 +1,19 @@
+/**
+ * IMAGE COMPRESSION SCRIPT
+ * 
+ * Run this whenever new project images are added to /src/assets/projects/ to generate optimized WebP versions for better performance.
+ * 
+ * Usage:
+ *   node compress-images.js
+ * 
+ * What it does:
+ *   - Reads all .png files from /src/assets/projects/
+ *   - Resizes to max 1920px width
+ *   - Converts to WebP format (80% quality)
+ *   - Saves to /src/assets/projects-optimized/
+ */
+
+
 import sharp from 'sharp'
 import fs from 'fs'
 import path from 'path'

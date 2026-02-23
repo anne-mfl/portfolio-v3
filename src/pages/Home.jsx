@@ -15,8 +15,8 @@ const Home = ({ activePage, setActivePage }) => {
           animate={{ y: '0%', opacity: 1, transition: { duration: 0.4, delay: 0.5 } }}
           exit={{ opacity: 0, y: "10%", transition: { duration: 0.4, delay: 0.4 } }}
         >
-          <h1 className='page_title font-bold'>Anne Lee</h1>
-          <h2 className='page_title text-xl font-semibold mb-8'>Frontend Developer</h2>
+          <h1 className='page_title font-bold 2xl:text-9xl'>Anne Lee</h1>
+          <h2 className='page_title text-xl font-semibold mb-8 2xl:text-2xl'>Frontend Developer</h2>
         </motion.div>
 
         <motion.div
@@ -25,7 +25,7 @@ const Home = ({ activePage, setActivePage }) => {
           animate={{ y: '0%', opacity: 1, transition: { duration: 0.4, delay: 0.8 } }}
           exit={{ opacity: 0, y: "10%", transition: { duration: 0.4 } }}
         >
-          <p className='mb-8 max-md:text-sm'>
+          <p className='mb-8 max-md:text-sm 2xl:text-xl'>
             <b>React Frontend Developer</b> with 3+ years of
             <span>&nbsp;</span>
             <br className='max-sm:hidden' />
