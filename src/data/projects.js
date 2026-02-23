@@ -28,6 +28,15 @@ export const projects = [
     images: ['designo_0', 'designo_1', 'designo_2']
   },
   {
+    name: 'github',
+    title: 'Github Explorer',
+    using: ['Next.js', 'TypeScript', 'TailwindCSS', 'GraphQL', 'Chart.js'],
+    repo: 'https://github.com/anne-mfl/github-explorer',
+    site: 'https://github-explorer-kappa-lake.vercel.app/',
+    desc: "A fully responsive GitHub user profile clone consuming GitHub's GraphQL API to fetch and display real user data. Features contribution heatmaps, radar visualizations, and repository filtering/sorting.",
+    images: ['github_0', 'github_1', 'github_2']
+  },
+  {
     name: 'kanban',
     title: 'Kanban Task Management App',
     using: ['Next.js', 'Typescript', 'Redux Toolkit', 'Sass'],
